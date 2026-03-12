@@ -1,0 +1,941 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>حضانة كندر - موقع حضانة أطفال</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <!-- Favicon -->
+        <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&family=Tajawal:wght@400;500;700&display=swap"
+              rel="stylesheet">
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+              rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+              rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .spinner-custom { width: 3rem; height: 3rem; }
+            .founder-img { width: 45px; height: 45px; }
+            .mt-n150 { margin-top: -150px; }
+            .min-h-400 { min-height: 400px; }
+            .obj-cover { object-fit: cover; }
+            .max-w-600 { max-width: 600px; }
+            .max-w-400 { max-width: 400px; }
+            .bg-rgba-dark { background: rgba(0, 0, 0, .2) }
+            .testi-img { width: 90px; height: 90px; }
+            .bg-white-rad { border-radius: 50px 0 0 50px; }
+        </style>
+    </head>
+    <body>
+        <div class="container-xxl bg-white p-0">
+            <!-- Spinner Start -->
+            <div id="spinner"
+                 class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="loading-container">
+                    <div class="spinner-border text-primary spinner-custom" role="status">
+                        <span class="sr-only">جاري التحميل...</span>
+                    </div>
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+            <!-- Spinner End -->
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-primary">
+                        <i class="fa fa-book-reader me-3"></i>حضانة كندر
+                    </h1>
+                </a>
+                <button type="button"
+                        class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="about.html" class="nav-item nav-link">من نحن</a>
+                        <a href="classes.html" class="nav-item nav-link">الفصول</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">الصفحات</a>
+                            <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                                <a href="facility.html" class="dropdown-item">مرافق المدرسة</a>
+                                <a href="team.html" class="dropdown-item">المعلمون المتميزون</a>
+                                <a href="call-to-action.html" class="dropdown-item">كن معلماً</a>
+                                <a href="appointment.html" class="dropdown-item">حجز موعد</a>
+                                <a href="testimonial.html" class="dropdown-item">آراء الأهالي</a>
+                                <a href="404.html" class="dropdown-item">صفحة 404</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                    </div>
+                    <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">انضم إلينا<i class="fa fa-arrow-left ms-3"></i></a>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+            <!-- Carousel Start -->
+            <div class="container-fluid p-0 mb-5">
+                <div class="owl-carousel header-carousel position-relative">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid"
+                             src="img/carousel-1.jpg"
+                             width="1920"
+                             height="1080"
+                             alt="صورة البانر 1">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center bg-rgba-dark">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-10 col-lg-8">
+                                        <h1 class="display-2 text-white  mb-4">أفضل حضانة تعليمية لطفلك المبدع</h1>
+                                        <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                            نقدم بيئة تعليمية متكاملة تدمج بين المرح، الإبداع وتطوير المهارات لبناء جيل رائد في عام 2026.
+                                        </p>
+                                        <a href="about.html"
+                                           class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 ">اقرأ المزيد</a>
+                                        <a href="classes.html"
+                                           class="btn btn-dark rounded-pill py-sm-3 px-sm-5 ">فصولنا</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid"
+                             src="img/carousel-2.jpg"
+                             width="1920"
+                             height="1080"
+                             alt="صورة البانر 2">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center bg-rgba-dark">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-10 col-lg-8">
+                                        <h1 class="display-2 text-white  mb-4">اصنع مستقبلاً مشرقاً لطفلك معنا</h1>
+                                        <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                            رحلة طفلك نحو التميز تبدأ من هنا. اكتشف برامجنا التعليمية الحديثة والمبتكرة.
+                                        </p>
+                                        <a href="about.html"
+                                           class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 ">اقرأ المزيد</a>
+                                        <a href="classes.html"
+                                           class="btn btn-dark rounded-pill py-sm-3 px-sm-5 ">فصولنا</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
+            <!-- Facilities Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5  max-w-600" data-wow-delay="0.1s">
+                        <h1 class="mb-3">مرافق المدرسة</h1>
+                        <p>
+                            نقدم في حضانة كندر مجموعة متكاملة من المرافق الآمنة والمصممة لتلبية احتياجات الأطفال المتنوعة والتشجيع على الاستكشاف.
+                        </p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6 " data-wow-delay="0.1s">
+                            <div class="facility-item">
+                                <div class="facility-icon bg-primary">
+                                    <span class="bg-primary"></span>
+                                    <i class="fa fa-bus-alt fa-3x text-primary"></i>
+                                    <span class="bg-primary"></span>
+                                </div>
+                                <div class="facility-text bg-primary">
+                                    <h3 class="text-primary mb-3">حافلة مدرسية</h3>
+                                    <p class="mb-0">خدمة نقل آمنة ومريحة للأطفال مع مشرفين متخصصين.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 " data-wow-delay="0.3s">
+                            <div class="facility-item">
+                                <div class="facility-icon bg-success">
+                                    <span class="bg-success"></span>
+                                    <i class="fa fa-futbol fa-3x text-success"></i>
+                                    <span class="bg-success"></span>
+                                </div>
+                                <div class="facility-text bg-success">
+                                    <h3 class="text-success mb-3">ساحة لعب</h3>
+                                    <p class="mb-0">مساحات خضراء واسعة للعب الآمن وتفريغ طاقة الأطفال.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 " data-wow-delay="0.5s">
+                            <div class="facility-item">
+                                <div class="facility-icon bg-warning">
+                                    <span class="bg-warning"></span>
+                                    <i class="fa fa-home fa-3x text-warning"></i>
+                                    <span class="bg-warning"></span>
+                                </div>
+                                <div class="facility-text bg-warning">
+                                    <h3 class="text-warning mb-3">مقصف صحي</h3>
+                                    <p class="mb-0">وجبات غذائية صحية ومتوازنة لضمان نمو سليم.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 " data-wow-delay="0.7s">
+                            <div class="facility-item">
+                                <div class="facility-icon bg-info">
+                                    <span class="bg-info"></span>
+                                    <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                                    <span class="bg-info"></span>
+                                </div>
+                                <div class="facility-text bg-info">
+                                    <h3 class="text-info mb-3">تعليم إيجابي</h3>
+                                    <p class="mb-0">فصول مجهزة بأحدث أدوات التعليم التفاعلي والمرح.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Facilities End -->
+            <!-- About Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 " data-wow-delay="0.1s">
+                            <h1 class="mb-4">تعرف أكثر على عملنا وأنشطتنا الثقافية</h1>
+                            <p>نحن في حضانة كندر نؤمن بأن كل طفل يتمتع بقدرات فريدة تستحق الرعاية والتطوير في بيئة تعليمية آمنة ومحفزة.</p>
+                            <p class="mb-4">
+                                رسالتنا هي تقديم تعليم متميز يجمع بين المرح والمعرفة، مع التركيز على بناء المهارات الاجتماعية والقيم الأخلاقية لأطفالنا ليصبحوا قادة المستقبل في عام 2026 وما بعده.
+                            </p>
+                            <div class="row g-4 align-items-center">
+                                <div class="col-sm-6">
+                                    <a class="btn btn-primary rounded-pill py-3 px-5" href="about.html">اقرأ المزيد</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0 founder-img"
+                                             src="img/user.jpg"
+                                             width="45"
+                                             height="45"
+                                             alt="المؤسس">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                            <small>المؤسس والمدير التنفيذي</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 about-img " data-wow-delay="0.5s">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img class="img-fluid w-75 rounded-circle bg-light p-3"
+                                         src="img/about-1.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة عن كندر 1">
+                                </div>
+                                <div class="col-6 text-start mt-n150">
+                                    <img class="img-fluid w-100 rounded-circle bg-light p-3"
+                                         src="img/about-2.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة عن كندر 2">
+                                </div>
+                                <div class="col-6 text-end mt-n150">
+                                    <img class="img-fluid w-100 rounded-circle bg-light p-3"
+                                         src="img/about-3.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة عن كندر 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+            <!-- Call To Action Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-lg-6  min-h-400" data-wow-delay="0.1s">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded obj-cover"
+                                         src="img/call-to-action.jpg"
+                                         width="600"
+                                         height="400"
+                                         alt="كن معلما">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 " data-wow-delay="0.5s">
+                                <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                    <h1 class="mb-4">كن معلماً معنا</h1>
+                                    <p class="mb-4">انضم إلى فريقنا التعليمي المتميز وساهم في بناء مستقبل أطفالنا في بيئة عمل محفزة ومبدعة.</p>
+                                    <a class="btn btn-primary py-3 px-5" href="call-to-action.html">ابدأ الآن<i class="fa fa-arrow-left ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Call To Action End -->
+            <!-- Classes Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5  max-w-600" data-wow-delay="0.1s">
+                        <h1 class="mb-3">فصول المدرسة</h1>
+                        <p>نقدم مجموعة متنوعة من الفصول التعليمية والأنشطة التي تناسب مختلف الفئات العمرية والاهتمامات.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.1s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle"
+                                         src="img/classes-1.jpg"
+                                         alt="صورة الفصل 1"
+                                         width="300"
+                                         height="300">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">الفن والرسم</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0 founder-img"
+                                                 src="img/user.jpg"
+                                                 width="45"
+                                                 height="45"
+                                                 alt="المعلم">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                                <small>معلم</small>
+                                            </div>
+                                        </div>
+                                        <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">العمر:</h6>
+                                                <small>3-5 سنوات</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">الوقت:</h6>
+                                                <small>9-10 صباحاً</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">السعة:</h6>
+                                                <small>30 طفل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.3s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle"
+                                         src="img/classes-2.jpg"
+                                         alt="صورة الفصل 2"
+                                         width="300"
+                                         height="300">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">إدارة الألوان</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0"
+                                                 src="img/user.jpg"
+                                                 alt="صورة"
+                                                 width="45"
+                                                 height="45">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                                <small>معلم</small>
+                                            </div>
+                                        </div>
+                                        <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">العمر:</h6>
+                                                <small>3-5 سنوات</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">الوقت:</h6>
+                                                <small>9-10 صباحاً</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">السعة:</h6>
+                                                <small>30 طفل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.5s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle"
+                                         src="img/classes-3.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة الفصل 3">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">الرياضة والرقص</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0"
+                                                 src="img/user.jpg"
+                                                 alt="صورة"
+                                                 width="45"
+                                                 height="45">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                                <small>معلم</small>
+                                            </div>
+                                        </div>
+                                        <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">العمر:</h6>
+                                                <small>3-5 سنوات</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">الوقت:</h6>
+                                                <small>9-10 صباحاً</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">السعة:</h6>
+                                                <small>30 طفل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.1s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle"
+                                         src="img/classes-4.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة الفصل 4">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">اللغة والتحدث</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0"
+                                                 src="img/user.jpg"
+                                                 alt="صورة"
+                                                 width="45"
+                                                 height="45">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                                <small>معلم</small>
+                                            </div>
+                                        </div>
+                                        <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">العمر:</h6>
+                                                <small>3-5 سنوات</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">الوقت:</h6>
+                                                <small>9-10 صباحاً</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">السعة:</h6>
+                                                <small>30 طفل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.3s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle"
+                                         src="img/classes-5.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة الفصل 5">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">الدين والتاريخ</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0"
+                                                 src="img/user.jpg"
+                                                 alt="صورة"
+                                                 width="45"
+                                                 height="45">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                                <small>معلم</small>
+                                            </div>
+                                        </div>
+                                        <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">العمر:</h6>
+                                                <small>3-5 سنوات</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">الوقت:</h6>
+                                                <small>9-10 صباحاً</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">السعة:</h6>
+                                                <small>30 طفل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.5s">
+                            <div class="classes-item">
+                                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                    <img class="img-fluid rounded-circle"
+                                         src="img/classes-6.jpg"
+                                         width="300"
+                                         height="300"
+                                         alt="صورة الفصل 6">
+                                </div>
+                                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                    <a class="d-block text-center h3 mt-3 mb-4" href="">المعرفة العامة</a>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle flex-shrink-0"
+                                                 src="img/user.jpg"
+                                                 alt="صورة"
+                                                 width="45"
+                                                 height="45">
+                                            <div class="ms-3">
+                                                <h6 class="text-primary mb-1">أحمد محمد</h6>
+                                                <small>معلم</small>
+                                            </div>
+                                        </div>
+                                        <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-primary pt-2">
+                                                <h6 class="text-primary mb-1">العمر:</h6>
+                                                <small>3-5 سنوات</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-success pt-2">
+                                                <h6 class="text-success mb-1">الوقت:</h6>
+                                                <small>9-10 صباحاً</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="border-top border-3 border-warning pt-2">
+                                                <h6 class="text-warning mb-1">السعة:</h6>
+                                                <small>30 طفل</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Classes End -->
+            <!-- Appointment Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-lg-6 " data-wow-delay="0.1s">
+                                <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                    <h1 class="mb-4">حجز موعد</h1>
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="text"
+                                                           class="form-control border-0"
+                                                           id="gname"
+                                                           placeholder="اسم ولي الأمر">
+                                                    <label for="gname">اسم ولي الأمر</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="email"
+                                                           class="form-control border-0"
+                                                           id="gmail"
+                                                           placeholder="البريد الإلكتروني">
+                                                    <label for="gmail">البريد الإلكتروني</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="text"
+                                                           class="form-control border-0"
+                                                           id="cname"
+                                                           placeholder="اسم الطفل">
+                                                    <label for="cname">اسم الطفل</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-floating">
+                                                    <input type="text"
+                                                           class="form-control border-0"
+                                                           id="cage"
+                                                           placeholder="عمر الطفل">
+                                                    <label for="cage">عمر الطفل</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control border-0"
+                                                              placeholder="اترك رسالة هنا"
+                                                              id="message"
+                                                              rows="4"></textarea>
+                                                    <label for="message">الرسالة</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary w-100 py-3" type="submit">إرسال الطلب</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6  min-h-400" data-wow-delay="0.5s">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded obj-cover"
+                                         src="img/appointment.jpg"
+                                         width="600"
+                                         height="400"
+                                         alt="حجز موعد">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Appointment End -->
+            <!-- Team Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5  max-w-600" data-wow-delay="0.1s">
+                        <h1 class="mb-3">معلمونا المتميزون</h1>
+                        <p>نخبة من المعلمين المتخصصين ذوي الخبرة العالية في رعاية وتعليم الأطفال بأساليب حديثة.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.1s">
+                            <div class="team-item position-relative">
+                                <img class="img-fluid rounded-circle w-75"
+                                     src="img/team-1.jpg"
+                                     alt="سارة خالد"
+                                     width="300"
+                                     height="300">
+                                <div class="team-text">
+                                    <h3>سارة خالد</h3>
+                                    <p>معلمة لغة عربية</p>
+                                    <div class="d-flex align-items-center">
+                                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.3s">
+                            <div class="team-item position-relative">
+                                <img class="img-fluid rounded-circle w-75"
+                                     src="img/team-2.jpg"
+                                     alt="أحمد محمود"
+                                     width="300"
+                                     height="300">
+                                <div class="team-text">
+                                    <h3>أحمد محمود</h3>
+                                    <p>معلم فنون وموسيقى</p>
+                                    <div class="d-flex align-items-center">
+                                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 " data-wow-delay="0.5s">
+                            <div class="team-item position-relative">
+                                <img class="img-fluid rounded-circle w-75"
+                                     src="img/team-3.jpg"
+                                     alt="نورة علي"
+                                     width="300"
+                                     height="300">
+                                <div class="team-text">
+                                    <h3>نورة علي</h3>
+                                    <p>أخصائية رياض أطفال</p>
+                                    <div class="d-flex align-items-center">
+                                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+            <!-- Testimonial Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5  max-w-600" data-wow-delay="0.1s">
+                        <h1 class="mb-3">ماذا يقول الأهالي!</h1>
+                        <p>ثقة الأهالي هي سر نجاحنا، نسعى دائماً لتقديم أفضل تجربة تعليمية لأطفالكم.</p>
+                    </div>
+                    <div class="owl-carousel testimonial-carousel " data-wow-delay="0.1s">
+                        <div class="testimonial-item bg-light rounded p-5">
+                            <p class="fs-5">
+                                تعليم ممتاز وبيئة آمنة جداً لأطفالي، لقد تحسنت مهارات طفلي بشكل ملحوظ منذ انضمامه إلى حضانة كندر. شكراً لكم!
+                            </p>
+                            <div class="d-flex align-items-center bg-white me-n5 bg-white-rad">
+                                <img class="img-fluid flex-shrink-0 rounded-circle testi-img"
+                                     src="img/testimonial-1.jpg"
+                                     alt="صورة ولي الأمر"
+                                     style="width: 90px;
+                                            height: 90px">
+                                <div class="ps-3">
+                                    <h3 class="mb-1">خولة أحمد</h3>
+                                    <span>طبيبة</span>
+                                </div>
+                                <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-light rounded p-5">
+                            <p class="fs-5">
+                                تجربة رائعة وتعامل راقي من جميع المعلمات. أطفالي يحبون الذهاب للحضانة كل يوم، وهذا يشعرني بالطمأنينة.
+                            </p>
+                            <div class="d-flex align-items-center bg-white me-n5 bg-white-rad">
+                                <img class="img-fluid flex-shrink-0 rounded-circle testi-img"
+                                     src="img/testimonial-2.jpg"
+                                     alt="صورة ولي الأمر"
+                                     style="width: 90px;
+                                            height: 90px">
+                                <div class="ps-3">
+                                    <h3 class="mb-1">محمود علي</h3>
+                                    <span>مهندس</span>
+                                </div>
+                                <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-light rounded p-5">
+                            <p class="fs-5">
+                                أفضل قرار اتخذناه كان تسجيل طفلنا هنا. الأنشطة التعليمية مبتكرة وتساعد على تنمية ذكاء الأطفال بطرق ممتعة.
+                            </p>
+                            <div class="d-flex align-items-center bg-white me-n5 bg-white-rad">
+                                <img class="img-fluid flex-shrink-0 rounded-circle testi-img"
+                                     src="img/testimonial-3.jpg"
+                                     alt="صورة ولي الأمر"
+                                     style="width: 90px;
+                                            height: 90px">
+                                <div class="ps-3">
+                                    <h3 class="mb-1">سارة إبراهيم</h3>
+                                    <span>رائدة أعمال</span>
+                                </div>
+                                <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+            <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 "
+                 data-wow-delay="0.1s">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white mb-4">اتصل بنا</h3>
+                            <p class="mb-2">
+                                <i class="fa fa-map-marker-alt me-3"></i>123 شارع، القاهرة، مصر
+                            </p>
+                            <p class="mb-2">
+                                <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+                            </p>
+                            <p class="mb-2">
+                                <i class="fa fa-envelope me-3"></i>info@kinder.com
+                            </p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white mb-4">روابط سريعة</h3>
+                            <a class="btn btn-link text-white-50" href="about.html">من نحن</a>
+                            <a class="btn btn-link text-white-50" href="contact.html">تواصل معنا</a>
+                            <a class="btn btn-link text-white-50" href="">خدماتنا</a>
+                            <a class="btn btn-link text-white-50" href="">سياسة الخصوصية</a>
+                            <a class="btn btn-link text-white-50" href="">الشروط والأحكام</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white mb-4">معرض الصور</h3>
+                            <div class="row g-2 pt-2">
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-light p-1"
+                                         src="img/classes-1.jpg"
+                                         alt="صورة معرض 1"
+                                         width="100"
+                                         height="100">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-light p-1"
+                                         src="img/classes-2.jpg"
+                                         alt="صورة معرض 2"
+                                         width="100"
+                                         height="100">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-light p-1"
+                                         src="img/classes-3.jpg"
+                                         alt="صورة معرض 3"
+                                         width="100"
+                                         height="100">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-light p-1"
+                                         src="img/classes-4.jpg"
+                                         alt="صورة معرض 4"
+                                         width="100"
+                                         height="100">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-light p-1"
+                                         src="img/classes-5.jpg"
+                                         alt="صورة معرض 5"
+                                         width="100"
+                                         height="100">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid rounded bg-light p-1"
+                                         src="img/classes-6.jpg"
+                                         alt="صورة معرض 6"
+                                         width="100"
+                                         height="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white mb-4">النشرة الإخبارية</h3>
+                            <p>اشترك معنا لتصلك آخر أخبار وفعاليات الحضانة في عام 2026.</p>
+                            <div class="position-relative mx-auto max-w-400">
+                                <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                       type="text"
+                                       placeholder="بريدك الإلكتروني">
+                                <button type="button"
+                                        class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                                    اشترك
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; 2026 جميع الحقوق محفوظة:
+                                <a class="border-bottom" href="https://mostaql.com/u/moh_alfre">moh_alfre</a>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <a href="index.html">الرئيسية</a>
+                                    <a href="">ملفات الارتباط</a>
+                                    <a href="">مساعدة</a>
+                                    <a href="">الأسئلة الشائعة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Demo Popup Start -->
+        <div id="demoPopup" class="demo-popup-overlay">
+            <div class="demo-popup-content">
+                <button id="closeDemoPopup" class="demo-popup-close-btn">
+                    <i class="fa fa-times"></i>
+                </button>
+                <i class="fa fa-laptop-code demo-popup-icon"></i>
+                <h2 class="demo-popup-title">مرحباً بك في النسخة التجريبية</h2>
+                <p class="demo-popup-text">
+                    هذا الموقع هو مجرد نسخة تجريبية (ديمو) لاستعراض واجهة المستخدم والتصميم. هذا ليس الموقع المبرمج النهائي. شكراً لتفهمك!
+                </p>
+                <div class="demo-popup-checkbox-wrapper">
+                    <input type="checkbox" id="dontShowAgainDemo">
+                    <label for="dontShowAgainDemo">لا تعرض هذه الرسالة مجدداً</label>
+                </div>
+                <button id="acceptDemoBtn" class="demo-popup-action">فهمت ذلك</button>
+            </div>
+        </div>
+        <!-- Demo Popup End -->
+    </body>
+</html>
